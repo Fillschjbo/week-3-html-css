@@ -1,0 +1,34 @@
+#desktopArticle {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    #desktopArticle{
+        display: block;
+    }
+    #mobileArticle {
+        display: none;
+    }
+}
+
+/*templates*/
+
+/*small*/
+@media (min-width: 640px) {
+
+/*medium*/
+    @media (min-width: 768px) {
+        h1 {
+            color: blue;
+        }
+    }
+}
+
+/*large*/
+    @media (min-width: 1024px)
+
+/*XL*/
+    @media (min-width: 1280px)
+
+/*xxl*/
+    @media (min-width: 1536px)
