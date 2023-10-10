@@ -1,0 +1,87 @@
+/* universal selector */
+* {
+    color: red;
+    font-size: 28px;
+}
+
+/* tag selector */
+p {
+    color: darkgreen;
+}
+
+/* class selector */
+.highlight {
+    color: blue;
+}
+
+/* ID selector */
+#header {
+    background-color: yellow;
+}
+
+/* descendant selector */
+article p, h2 {
+    color: #ff728b;
+}
+
+/* child selector */
+ul > li {
+    list-style: square;
+}
+
+/* general sibling selector */
+h2 ~ p {
+    background-color: #ffcaa4;
+}
+
+/* sibling selector */
+h2 + p {
+    background-color: aqua;
+}
+
+/* attribute selector */
+input[type="text"] {
+    color: black;
+    font-size: 18px;
+    border-color: yellow;
+}
+
+input[type="submit"] {
+    color: #d0ffd0;
+    background-color: mediumpurple;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    color: mediumpurple;
+    background-color: #d0ffd0;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+/*pseudo-class*/
+ul li:last-child {
+    color: #d5abff;
+}
+
+ul li:nth-child(2) {
+    background-color: darkkhaki;
+}
+
+/* pseudo-elements */
+p::before {
+    content: "✨"
+}
+
+/* grouping selector */
+h1, h2, p {
+    font-family: Monaco, Serif;
+}
+
+/* combining selector*/
+.dummy::first-letter {
+    font-size: 76px;
+    initial-letter: 3;
+}
