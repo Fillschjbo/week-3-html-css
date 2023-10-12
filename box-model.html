@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>boxmodel</title>
+    <style>
+      section {
+        display: flex;
+        justify-content: center;
+      }
+
+      .div-1 {
+        background-color: plum;
+        color: #e9ffe9;
+        width: 150px;
+        height: 150px;
+        padding: 60px 0;
+        margin: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        font-family: Monaco, serif;
+        cursor: pointer;
+      }
+
+      .div-1:hover {
+          background-color: #e9ffe9;
+          color: plum;
+      }
+
+      .div-2 {
+        background-color: lightskyblue;
+        color: #e9ffe9;
+        width: 150px;
+        height: 150px;
+        padding: 60px 0;
+        margin: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        font-family: Monaco, serif;
+        cursor: pointer;
+      }
+
+      .div-2:hover{
+          background-color: #e9ffe9;
+          color: #87CEFAFF;
+      }
+
+      .div-3 {
+          background-color: forestgreen;
+          color: #e9ffe9;
+          width: 150px;
+          height: 150px;
+          padding: 60px 0;
+          margin: 10px;
+          text-align: center;
+          box-sizing: border-box;
+          font-family: Monaco, serif;
+          cursor: pointer;
+      }
+
+      .div-3:hover {
+          background-color: #e9ffe9;
+          color: forestgreen;
+      }
+
+    </style>
+
+</head>
+<body>
+  <section>
+    <div class="div-1" onclick="this.querySelector('#specificity').click(); return true;">
+        <a id="specificity" href="specificity.html"></a>
+      Specificity
+    </div>
+    <div class="div-2" onclick="this.querySelector('#pseudo').click(); return true;">
+      <a id="pseudo" href="pseudo%20classes.html"></a>
+        Pseudo
+    </div>
+    <div class="div-3" onclick="this.querySelector('#responsive').click(); return true;">
+          <a id="responsive" href="responsive-menu.html"></a>
+          Responsive
+    </div>
+  </section>
+</body>
+</html>

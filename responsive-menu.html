@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>responsive menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Krungthep;
+            margin: 0;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            position: sticky;
+            top: 0;
+            padding: 8px 16px;
+            margin: 0;
+        }
+
+        nav {
+            display: none;
+            background-color: #e9ffe9;
+            border-radius: 8px;
+            margin: 0;
+        }
+
+        nav a {
+            color: #1f1f1f;
+            text-decoration: none;
+        }
+
+        nav li{
+           padding: 8px 0;
+        }
+
+        label {
+            font-size: 38px;
+        }
+
+        #menuCheckbox:checked ~ nav{
+            display: block;
+        }
+
+        #menuCheckbox {
+            display: none;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 8px 16px;
+        }
+
+        main {
+            padding: 8px;
+        }
+
+        p {
+            margin: 16px 8px;
+        }
+
+        /* Small (sm) */
+        @media (min-width: 640px) {
+        }
+
+        /* Medium (md) */
+        @media (min-width: 768px) {
+            nav {
+                display: block;
+            }
+            header label {
+                display: none;
+            }
+
+            nav li{
+                display: inline-block;
+                padding: 0px 8px;
+            }
+        }
+        /* Large (lg) */
+        @media (min-width: 1024px) {
+            /* Your styles for the large breakpoint here */
+        }
+        /* Extra Large (xl) */
+        @media (min-width: 1280px) {
+            /* Your styles for the extra large breakpoint here */
+        }
+        /* 2XL (2xl) */
+        @media (min-width: 1536px) {
+            /* Your styles for the 2XL breakpoint here */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="menuCheckbox"/>
+        <label for="menuCheckbox">🍔</label>
+        <nav>
+            <ul>
+                <li>
+                    <a href=#>Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Fillip is minion</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A blanditiis debitis, deserunt ea enim eum fugit illo inventore maiores nam nobis officia pariatur quae repellendus sed sequi sint totam unde? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam asperiores atque beatae consectetur consequuntur delectus deleniti doloremque dolores earum eligendi, labore laboriosam magnam officia praesentium quos repellendus similique?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aut consequuntur deleniti, deserunt libero minus nulla provident. Beatae explicabo facilis maiores molestias quas quidem voluptatem voluptatibus! Cumque ducimus neque tenetur!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor doloribus error facilis, illum inventore maxime praesentium quod sunt. Aspernatur beatae consectetur deleniti iure iusto laudantium perspiciatis rem sequi tempora tenetur. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur consequuntur, cumque debitis ducimus eos et facilis impedit laudantium modi molestiae numquam quas quasi recusandae repudiandae saepe similique tenetur vitae?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab delectus dignissimos doloribus hic iusto maiores, necessitatibus neque nostrum, provident quia quis quisquam reiciendis reprehenderit, soluta sunt. Consectetur consequatur odit ratione.</p>
+    </main>
+</body>
+</html>
