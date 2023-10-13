@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Hannotate SC",serif;
+      }
+
+      .modal {
+        height: 80vh;
+        background-color: #edeef6;
+        width: 900px;
+        max-width: 80%;
+        overflow: scroll;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .modalHeader{
+          display: flex;
+          justify-content: space-between;
+          padding: 0 1rem 0.5rem 1rem;
+          border-bottom: 1px solid #2c2c2c;
+      }
+
+      .modalHeader .title {
+          font-size: 1.5rem;
+          padding-top: 1rem;
+      }
+
+      .modalHeader .CloseButton {
+          border: none;
+          background: none;
+          font-size: 1.5rem;
+          align-self: flex-start;
+          padding-top: 0.5rem;
+          cursor: pointer;
+      }
+
+      .modalBody {
+          padding: 1rem;
+          overflow: auto;
+          flex-grow: 1;
+      }
+
+      .modalFooter {
+          display: flex;
+          justify-content: flex-end;
+          border-top: 1px solid #2c2c2c;
+          padding: .5rem;
+          gap: .5rem;
+      }
+
+      .btn {
+          padding: .5rem 1rem;
+          border: none;
+          cursor: pointer;
+          color: white;
+          border-radius: .5rem;
+          font-size: inherit;
+      }
+
+      .Ok {
+          background-color: forestgreen;
+      }
+
+      .Ok:hover, .Ok:focus {
+          background-color: #4fd930;
+      }
+
+      .Cancel {
+          background-color: firebrick;
+      }
+
+      .Cancel:hover, Cancel:focus {
+          background-color: crimson;
+      }
+
+      body {
+          background-color: grey;
+          display: flex;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+      }
+
+    </style>
+</head>
+
+<body>
+
+<!--  modal container  -->
+ <div class="modal">
+
+<!--  modal header  -->
+    <div class="modalHeader">
+      <span class="title">Title</span>
+      <button class="CloseButton">X</button>
+    </div>
+
+<!--  modal body  -->
+    <div class="modalBody">Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Ab asperiores aspernatur commodi corporis et eum labore
+        laudantium magnam nemo perferendis perspiciatis, quidem repellat
+        reprehenderit repudiandae sapiente sunt, voluptatibus? Quis, repellat!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+        distinctio dolor ea eius eveniet, in incidunt itaque necessitatibus
+        numquam perferendis placeat possimus quam quibusdam ratione sequi,
+        sit tenetur vel veniam? Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Corporis eligendi eos illo libero odio provident
+        quasi, suscipit vero! Ad beatae commodi eaque laudantium minima nam,
+        nesciunt perferendis praesentium voluptate voluptatem. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Ab atque consequatur
+        dolores ea earum enim et expedita fuga, iure minus mollitia obcaecati
+        officia perspiciatis quas quos sed tempora vel voluptate! Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Beatae cumque deserunt
+        dicta dignissimos et in ipsam iure magnam, minus natus neque nesciunt
+        nisi perspiciatis repellendus, saepe sequi tempora temporibus Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Animi blanditiis
+        cumque delectus doloribus ea expedita explicabo fugit modi
+        necessitatibus nihil, non praesentium tempora veritatis. Animi
+        aspernatur illum mollitia odio praesentium? Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Atque cupiditate dolore eligendi
+        est eum in, ipsam labore libero magni maiores minus necessitatibus
+        omnis quasi repellendus sequi similique sint voluptas voluptate?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
+        aliquam autem dolore eligendi error, et facere ipsam maxime minima
+        molestiae molestias nihil, officia perspiciatis sapiente suscipit,
+        tempora tenetur velit voluptatem?voluptas.Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. A asperiores aspernatur deserunt earum
+        exercitationem ipsum nobis obcaecati officia, omnis optio pariatur,
+        perferendis provident quae quos reiciendis repellendus saepe sed
+        veniam. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Ad animi explicabo facere magnam, nisi omnis praesentium quam quod,
+        recusandae reiciendis ullam voluptatibus! Amet autem consectetur
+        consequuntur corporis harum laborum, nesciunt? Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Assumenda quasi quia voluptatibus
+        voluptatum. Aspernatur autem blanditiis, consectetur consequatur
+        cupiditate deserunt ex facere neque nisi omnis perspiciatis sequi,
+        sint, velit voluptatum!
+    </div>
+
+<!--  modal footer  -->
+    <div class="modalFooter">
+      <button class="btn Ok">Ok</button>
+      <button class=" btn Cancel">Cancel</button>
+    </div>
+
+ </div>
+
+</body>
+</html>

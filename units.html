@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>units</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+      font-size: 16px;
+      font-family: SimSong, serif;
+    }
+
+    .parent {
+      width: 200px;
+      height: 500px;
+      border: 1px solid black;
+      font-size: 20px;
+    }
+
+    .item {
+      background-color: #f7ff10;
+    }
+
+    /* percent of parent*/
+    .item-percent {
+      width: 50%;
+    }
+
+    /*percentage of screen width (vw og vh(veiw width, view height))*/
+    .item-view-width {
+      width: 50vw;
+      height: 5vh;
+    }
+
+    /*root font size*/
+    .item-rem {
+      font-size: 2rem;
+    }
+
+    /*em takes font size from parent*/
+    .item-em {
+      font-size: 2em;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="parent">
+    <div class="item item-percent">percent</div>
+    <div class="item item-view-width">view width</div>
+    <div class="item item-rem">rem</div>
+    <div class="item item-em">em</div>
+  </div>
+
+</body>
+</html>

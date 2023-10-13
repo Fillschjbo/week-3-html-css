@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>boxmodel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
       section {
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
       }
 
       .div-1 {
@@ -28,7 +31,7 @@
       }
 
       .div-2 {
-        background-color: lightskyblue;
+        background-color: rgba(135, 206, 250, 0.96);
         color: #e9ffe9;
         width: 150px;
         height: 150px;
@@ -63,6 +66,59 @@
           color: forestgreen;
       }
 
+      .div-4 {
+          background-color: #ffff8a;
+          color: #1e1e18;
+          width: 150px;
+          height: 150px;
+          padding: 60px 0;
+          margin: 10px;
+          text-align: center;
+          box-sizing: border-box;
+          font-family: Monaco, serif;
+          cursor: pointer;
+      }
+
+      .div-4:hover {
+          background-color: #1e1e18;
+          color: #ffff8a;
+      }
+
+      .div-5 {
+          background-color: #b1ff9e;
+          color: #1e1e18;
+          width: 150px;
+          height: 150px;
+          padding: 60px 0;
+          margin: 10px;
+          text-align: center;
+          box-sizing: border-box;
+          font-family: Monaco, serif;
+          cursor: pointer;
+      }
+
+      .div-5:hover {
+          background-color: #1e1e18;
+          color: #b1ff9e;
+      }
+
+      .div-6 {
+          background-color: #3f2772;
+          color: #d8ecd9;
+          width: 150px;
+          height: 150px;
+          padding: 60px 0;
+          margin: 10px;
+          text-align: center;
+          box-sizing: border-box;
+          font-family: Monaco, serif;
+          cursor: pointer;
+      }
+
+      .div-6:hover {
+          background-color: #d8ecd9;
+          color: #3f2870;
+      }
     </style>
 
 </head>
@@ -79,6 +135,18 @@
     <div class="div-3" onclick="this.querySelector('#responsive').click(); return true;">
           <a id="responsive" href="responsive-menu.html"></a>
           Responsive
+    </div>
+    <div class="div-4" onclick="this.querySelector('#documentFlow').click(); return true;">
+          <a id="documentFlow" href="document-flow.html"></a>
+        Document flow
+    </div>
+      <div class="div-5" onclick="this.querySelector('#flexBox').click(); return true;">
+          <a id="flexBox" href="flex%20box.html"></a>
+        Flex box
+    </div>
+      <div class="div-6" onclick="this.querySelector('#modal').click(); return true;">
+          <a id="modal" href="modal.html"></a>
+        Modal
     </div>
   </section>
 </body>
